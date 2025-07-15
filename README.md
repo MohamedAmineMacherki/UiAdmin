@@ -1,20 +1,4 @@
-<div style="text-align:center;">
-  <img title="Logo for Zesty.io" width="300px" height="72px" src="https://brand.zesty.io/zesty-io-logo-horizontal.png" />  
-</div>
 
-> Application for managing your account, instances, teams and blueprints within the Zesty.io CMS
-
-<br />
-
-**[Start by creating a free instance](https://start.zesty.io/)**
-
-You have found the code base which powers the Zesty.io account management experience. While this code base can be run locally it is only recommended to do so for developing. If you would like to learn more about Zesty.io visit our [documentation at zesty.org](https://zesty.org/)
-
-**Browser Support**
-
-- Chrome / Firefox / Edge / Safari (latest)
-- IE11
-  - https://github.com/philipwalton/flexbugs#flexbug-4
 
 ## Architecture
 
@@ -28,11 +12,6 @@ Currently we bundle our "sub-apps" individually but include them all on initial 
 
 We use [Redux](https://redux.js.org/) for managing our state and follow a single app store pattern. All persistent application state is maintained in a single global store.
 
-### Design System
-
-The [Zesty.io design system](https://github.com/zesty-io/design-system) is our central location for components and patterns which are shared across our various external and internal applications. Our design system follows the [atomic design pattern](http://atomicdesign.bradfrost.com/) popularized by Brad Frost.
-
-Can be installed via `npm install @zesty-io/core` into any application. This is under active development and will have major breaking changes until we land 1.0. **NOT PRODUCTION READY**
 
 ### Error Handling
 
@@ -82,6 +61,3 @@ This application is configured to run and deploy against our internal stack and 
 
 When deploying it is important to use the `npm run build-production` command as this will cause a production [webpack](https://webpack.js.org/) build which adds large optimizations to the bundle size and runtime code.
 
----
-
-Copyright (C) [Zesty.io Inc.](https://zesty.io/)
